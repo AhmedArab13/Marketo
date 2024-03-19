@@ -1,0 +1,131 @@
+* {
+    margin: 0px;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Rubik';
+    background-color: transparent;
+    border: none;
+    outline: hidden;
+    list-style: none;
+
+
+}
+
+
+.top-cat {
+    height: 600px;
+
+}
+
+.top-cat .top-cat-nav {
+
+    border-bottom: solid 1px #ededed;
+}
+
+.top-cat .top-cat-nav ul li {
+    margin-left: 40px;
+
+}
+
+.top-cat .top-cat-nav ul li a {
+    display: block;
+    color: gray;
+    text-transform: capitalize;
+}
+
+.top-cat .top-cat-nav ul li a:hover {
+    transition: 1s;
+    color: #fed700;
+
+}
+
+.top-cat .top-cat-nav ul li a:hover .bar .low-bar {
+    background-color: #fed700;
+    border-radius: 2px;
+    width: 35px;
+    height: 2px;
+    position: relative;
+}
+
+
+.top-cat .top-cat-nav ul li .bar {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+
+.top-cat .top-cat-nav ul li .bar .low-bar .triangle {
+    width: 0;
+    height: 0;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-top: 7px solid #fed700;
+    position: absolute;
+    top: 100%;
+    left: calc((100% - 5px) /2);
+}
+
+
+/* ----------------------  top cat body --------------------------- */
+
+.top-cat .top-cat-body {
+
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.top-cat .top-cat-body .top-cat-item {
+
+    width: calc((100% - 60px) / 4);
+    height: 150px;
+    border-right: solid 1px #ededed;
+    padding-top: 10px;
+}
+
+.top-cat .top-cat-body .top-cat-item div:nth-child(1) {
+
+    width: 40%;
+    height: 100%;
+    background-image: url("../imgs/36-2.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+.top-cat .top-cat-body .top-cat-item div:nth-child(2) {
+
+    flex-direction: column;
+    width: 60%;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 50px;
+}
+
+.top-cat .top-cat-body .top-cat-item div:nth-child(2) a {
+    width: 100%;
+    font-weight: 600;
+    /* font-size: 20px; */
+}
+
+.top-cat .top-cat-body .top-cat-item div:nth-child(2) a:hover {
+
+    color: #3164b1;
+    transition: 1s;
+}
+
+
+.top-cat .top-cat-body .top-cat-item div:nth-child(2) span:nth-child(1) {
+
+    display: inline-block;
+    margin-left: 15px;
+    color: gray;
+    text-decoration: line-through;
+}
+
+.top-cat .top-cat-body .top-cat-item div:nth-child(2) span:nth-child(2) {
+
+    color: #467fd6;
+    text-decoration: none;
+}
